@@ -11,39 +11,39 @@ import * as Speech from "expo-speech";
 const { width, height } = Dimensions.get("screen");
 const questions = [
   {
-    questionText: "What is the capital of France?",
+    questionText: "Sad",
     answerOptions: [
-      { answerText: "New York", isCorrect: false },
-      { answerText: "London", isCorrect: false },
-      { answerText: "Paris", isCorrect: true },
-      { answerText: "Dublin", isCorrect: false },
+      { answerText: "Dad", isCorrect: false },
+      { answerText: "Bad", isCorrect: false },
+      { answerText: "Sad", isCorrect: true },
+      { answerText: "Pad", isCorrect: false },
     ],
   },
   {
-    questionText: "Who is CEO of Tesla?",
+    questionText: "Fat",
     answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Tony Stark", isCorrect: false },
+      { answerText: "Bat", isCorrect: false },
+      { answerText: "Fat", isCorrect: true },
+      { answerText: "Sat", isCorrect: false },
+      { answerText: "Dat", isCorrect: false },
     ],
   },
   {
-    questionText: "The iPhone was created by which company?",
+    questionText: "Dog",
     answerOptions: [
-      { answerText: "Apple", isCorrect: true },
-      { answerText: "Intel", isCorrect: false },
-      { answerText: "Amazon", isCorrect: false },
-      { answerText: "Microsoft", isCorrect: false },
+      { answerText: "Dog", isCorrect: true },
+      { answerText: "Fog", isCorrect: false },
+      { answerText: "Log", isCorrect: false },
+      { answerText: "Zog", isCorrect: false },
     ],
   },
   {
-    questionText: "How many Harry Potter books are there?",
+    questionText: "Sun",
     answerOptions: [
-      { answerText: "1", isCorrect: false },
-      { answerText: "4", isCorrect: false },
-      { answerText: "6", isCorrect: false },
-      { answerText: "7", isCorrect: true },
+      { answerText: "Gun", isCorrect: false },
+      { answerText: "Fun", isCorrect: false },
+      { answerText: "Cun", isCorrect: false },
+      { answerText: "Sun", isCorrect: true },
     ],
   },
 ];

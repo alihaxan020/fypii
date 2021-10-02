@@ -23,19 +23,19 @@ import * as Speech from "expo-speech";
 const { width, height } = Dimensions.get("screen");
 const questions = [
   {
-    questionText: "dog",
+    questionText: "Boy is sad",
     answerOptions: [{ answerText: "New York", isCorrect: false }],
   },
   {
-    questionText: "cat",
+    questionText: "Water is hot",
     answerOptions: [{ answerText: "Jeff Bezos", isCorrect: false }],
   },
   {
-    questionText: "lion",
+    questionText: "He needs rest",
     answerOptions: [{ answerText: "Apple", isCorrect: true }],
   },
   {
-    questionText: "rat",
+    questionText: "She cry",
     answerOptions: [{ answerText: "1", isCorrect: false }],
   },
 ];
@@ -274,7 +274,7 @@ const LevelThree = ({ navigation }) => {
               </View>
             </View>
             <View style={{ marginBottom: 5, marginTop: 5 }}>
-              <Title> Write the pronounced word: </Title>
+              <Title> Write the pronounced sentence: </Title>
             </View>
             <View>
               <View
