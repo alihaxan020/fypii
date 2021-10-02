@@ -123,6 +123,7 @@ const Form = ({ navigation }) => {
   const [data, setData] = useState([]);
   const [userForm, setUserForm] = useState(false);
   const [hide, setHide] = useState(true);
+  const [save, setSave] = useState(false);
   const handleNextBtn = (id, question, answer) => {
     const nextQuestion = currentQuestion + 1;
     setData((data) => [
@@ -155,11 +156,21 @@ const Form = ({ navigation }) => {
   const renderItem = ({ item }) => (
     <Item question={item.question} answer={item.answer} id={item.id} />
   );
-
+  const handleReset = () => {
+    setSave(false);
+    setData([]);
+    setChecked("");
+    setUserForm(false);
+    setCurrentQuestion(0);
+  };
   return (
     <View>
       {userForm ? (
-        <View style={{ paddingTop: StatusBar.currentHeight }}>
+        <View
+          style={{
+            paddingTop: StatusBar.currentHeight,
+          }}
+        >
           <View style={styling.header}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
               <Ionicons
@@ -169,7 +180,7 @@ const Form = ({ navigation }) => {
               />
             </TouchableOpacity>
 
-            <AppText style={styling.headerText}>User Response</AppText>
+            <AppText style={styling.headerText}>Self Assessment Form</AppText>
             <TouchableOpacity onPress={() => navigation.openDrawer()}>
               <Animatable.Image
                 animation="bounceIn"
@@ -184,20 +195,39 @@ const Form = ({ navigation }) => {
 
           <View
             style={{
+              width: width,
               justifyContent: "center",
               alignItems: "center",
-              paddingTop: 20,
             }}
           >
-            <AntDesign name="checkcircle" size={width * 0.2} color="black" />
-            <Title>Sereignty Level: Low</Title>
-            <Button
-              mode="contained"
-              onPress={() => setHide(!hide)}
-              style={{ marginTop: 15 }}
+            <View
+              style={{
+                width: width,
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+                paddingTop: 20,
+              }}
             >
-              {hide ? "show" : "hide"} User Responses
-            </Button>
+              <AntDesign
+                name="checkcircle"
+                size={width * 0.2}
+                color="#28CBB0"
+              />
+              <Title
+                style={{ fontSize: 25, fontWeight: "bold", marginTop: 20 }}
+              >
+                Thank You
+              </Title>
+              {save ? <Title>Form saved successfully</Title> : null}
+              <Button
+                mode="contained"
+                onPress={() => setHide(!hide)}
+                style={{ marginTop: 15, borderRadius: 10 }}
+              >
+                {hide ? "show" : "hide"} Responses
+              </Button>
+            </View>
           </View>
           {hide ? null : (
             <View
@@ -211,7 +241,32 @@ const Form = ({ navigation }) => {
               />
             </View>
           )}
-          <Title>Ali Hassan</Title>
+          <View
+            style={{
+              width: width,
+              justifyContent: "space-around",
+              flexDirection: "row",
+              alignItems: "center",
+              paddingTop: height * 0.4,
+            }}
+          >
+            <Button
+              mode="contained"
+              onPress={() => handleReset()}
+              color="#F6A5CA"
+              style={{ borderRadius: 10 }}
+            >
+              Reset Form
+            </Button>
+            <Button
+              mode="contained"
+              onPress={() => setSave(true)}
+              color="#28CBB0"
+              style={{ borderRadius: 10 }}
+            >
+              Save Form
+            </Button>
+          </View>
         </View>
       ) : (
         <View style={styles.container}>
