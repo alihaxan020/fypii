@@ -24,19 +24,19 @@ const { width, height } = Dimensions.get("screen");
 const questions = [
   {
     questionText: "Boy is sad",
-    answerOptions: [{ answerText: "New York", isCorrect: false }],
+    answerOptions: [{ answerText: "Boy is sad", isCorrect: false }],
   },
   {
     questionText: "Water is hot",
-    answerOptions: [{ answerText: "Jeff Bezos", isCorrect: false }],
+    answerOptions: [{ answerText: "Water is hot", isCorrect: false }],
   },
   {
     questionText: "He needs rest",
-    answerOptions: [{ answerText: "Apple", isCorrect: true }],
+    answerOptions: [{ answerText: "He needs rest", isCorrect: true }],
   },
   {
     questionText: "She cry",
-    answerOptions: [{ answerText: "1", isCorrect: false }],
+    answerOptions: [{ answerText: "She cry", isCorrect: false }],
   },
 ];
 const LevelThree = ({ navigation }) => {
@@ -94,7 +94,10 @@ const LevelThree = ({ navigation }) => {
   };
 
   const handleDone = (text) => {
-    if (questions[currentQuestion].questionText == text.toLowerCase()) {
+    if (
+      questions[currentQuestion].questionText.toLowerCase() ==
+      text.toLowerCase()
+    ) {
       setCorrect(true);
       setWrong(false);
       setScore(score + 1);
@@ -206,7 +209,7 @@ const LevelThree = ({ navigation }) => {
               }}
             >
               <Title>Remarks</Title>
-              <Subheading>You have to correct 3 questions out of 5</Subheading>
+              <Subheading>You have to correct 3 questions out of 4</Subheading>
               <Subheading>move to next level</Subheading>
             </View>
             <View

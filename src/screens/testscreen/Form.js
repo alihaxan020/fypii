@@ -25,94 +25,50 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 const { width, height } = Dimensions.get("screen");
 const questions = [
   {
-    questionText: "What is the capital of France?",
-    answerOptions: [
-      { answerText: "New York" },
-      { answerText: "London" },
-      { answerText: "Paris" },
-      { answerText: "Dublin" },
-    ],
+    questionText: "Do you try to avoid reading and writing whenever possible?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "Who is CEO of Tesla?",
-    answerOptions: [
-      { answerText: "Jeff Bezos" },
-      { answerText: "Elon Musk" },
-      { answerText: "Bill Gates" },
-      { answerText: "Tony Stark" },
-    ],
+    questionText:
+      "Do you struggle to remember things such as a PIN or telephone number?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "The iPhone was created by which company?",
-    answerOptions: [
-      { answerText: "Apple" },
-      { answerText: "Intel" },
-      { answerText: "Amazon" },
-      { answerText: "Microsoft" },
-    ],
+    questionText: "Do you face confusion in the order of letters in words?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "How many Harry Potter books are there?",
-    answerOptions: [
-      { answerText: "1" },
-      { answerText: "4" },
-      { answerText: "6" },
-      { answerText: "7" },
-    ],
+    questionText:
+      "Do you face problems learning the names and sounds of letters?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "What is the capital of France?",
-    answerOptions: [
-      { answerText: "New York" },
-      { answerText: "London" },
-      { answerText: "Paris" },
-      { answerText: "Dublin" },
-    ],
+    questionText:
+      "Do you face answering questions well orally, but having difficulty writing the answer down?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "Who is CEO of Tesla?",
-    answerOptions: [
-      { answerText: "Jeff Bezos" },
-      { answerText: "Elon Musk" },
-      { answerText: "Bill Gates" },
-      { answerText: "Tony Stark" },
-    ],
+    questionText:
+      "Do you struggle to learn sequences, such as days of the week or the alphabets?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "The iPhone was created by which company?",
-    answerOptions: [
-      { answerText: "Apple" },
-      { answerText: "Intel" },
-      { answerText: "Amazon" },
-      { answerText: "Microsoft" },
-    ],
+    questionText: "Do you have slow writing speed?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "How many Harry Potter books are there?",
-    answerOptions: [
-      { answerText: "1" },
-      { answerText: "4" },
-      { answerText: "6" },
-      { answerText: "7" },
-    ],
+    questionText:
+      "You have problem mispronouncing words, such as 'Aminal' to 'Animal'?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "Who is CEO of Tesla?",
-    answerOptions: [
-      { answerText: "Jeff Bezos" },
-      { answerText: "Elon Musk" },
-      { answerText: "Bill Gates" },
-      { answerText: "Tony Stark" },
-    ],
+    questionText:
+      "You have trouble telling directions such as east or west, left or right?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
   {
-    questionText: "What is the capital of France?",
-    answerOptions: [
-      { answerText: "New York" },
-      { answerText: "London" },
-      { answerText: "Paris" },
-      { answerText: "Dublin" },
-    ],
+    questionText: "You have problems with rhyming words?",
+    answerOptions: [{ answerText: "Yes" }, { answerText: "No" }],
   },
 ];
 

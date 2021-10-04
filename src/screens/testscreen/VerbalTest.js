@@ -197,7 +197,7 @@ const VerbalTest = ({ navigation }) => {
             }}
           >
             <Title>Remarks</Title>
-            <Subheading>You have to correct 3 questions out of 5</Subheading>
+            <Subheading>You have to correct 3 questions out of 4</Subheading>
             <Subheading>move to next level</Subheading>
           </View>
           <View
